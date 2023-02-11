@@ -12,4 +12,7 @@ public class UrlMapping {
 	public static final String SIGNUP = "signup";
 	public static final String LOGIN = "login";
 
+	// Health Check Controller
+	public static final String HEALTH_CHECK = BASE_URL + "health";
+
 }

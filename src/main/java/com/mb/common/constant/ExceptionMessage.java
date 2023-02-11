@@ -13,9 +13,11 @@ public class ExceptionMessage {
 	public static final String USER_NOT_FOUND = "user.not.found";
 	public static final String USER_ROLE_NOT_FOUND = "user.role.not.found";
 	public static final String USER_ALREADY_EXIST = "user.already.exist";
+	public static final String BAD_CREDENTIALS = "bad.credentials";
 
 	// JWT TOKEN
 	public static final String TOKEN_INVALID = "token.invalid";
 	public static final String TOKEN_EXPIRED = "token.expired";
+	public static final String SIGNATURE_INVALID = "token.signature.invalid";
 
 }

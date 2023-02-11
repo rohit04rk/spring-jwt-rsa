@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -83,10 +84,15 @@ public class AuthServiceImpl implements AuthService {
 	 */
 	@Override
 	public AuthToken userLogin(@Valid LoginDto loginDto) {
-		Authentication authentication = authenticationManager
-				.authenticate(new UsernamePasswordAuthenticationToken(loginDto.getEmail(), loginDto.getPassword()));
+		try {
+			Authentication authentication = authenticationManager
+					.authenticate(new UsernamePasswordAuthenticationToken(loginDto.getEmail(), loginDto.getPassword()));
 
-		return jwtTokenUtil.generateAuthToken(authentication);
+			return jwtTokenUtil.generateAuthToken(authentication);
+		} catch (BadCredentialsException e) {
+			throw new CustomException(env.getProperty(ExceptionMessage.BAD_CREDENTIALS), CustomErrorCode.UNAUTHORIZED,
+					HttpStatus.UNAUTHORIZED);
+		}
 	}
 
 }

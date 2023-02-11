@@ -13,6 +13,7 @@ public class PersistenceConfig {
 
 	@Bean
 	AuditorAware<String> auditorProvider() {
+
 		return new AuditorAwareImpl();
 	}
 

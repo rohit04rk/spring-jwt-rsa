@@ -30,20 +30,16 @@ public class Mapper {
 	 * @return T class object
 	 */
 	public <T> T convert(Object srcObj, Class<T> targetClass) {
-		T response = null;
-
 		ModelMapper modelMapper = new ModelMapper();
 		modelMapper.getConfiguration().setAmbiguityIgnored(true);
 		modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
 
 		try {
-			response = modelMapper.map(srcObj, targetClass);
+			return modelMapper.map(srcObj, targetClass);
 		} catch (Exception e) {
 			throw new CustomException(env.getProperty(ExceptionMessage.INTERNAL_SERVER_ERROR), e,
 					CustomErrorCode.INTERNAL_SERVER_ERROR, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
-
-		return response;
 	}
 
 	/**

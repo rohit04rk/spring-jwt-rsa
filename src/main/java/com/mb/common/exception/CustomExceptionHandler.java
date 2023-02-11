@@ -1,7 +1,6 @@
 package com.mb.common.exception;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
@@ -68,7 +67,7 @@ public class CustomExceptionHandler extends ResponseEntityExceptionHandler {
 		List<FieldError> fieldErrors = ex.getBindingResult().getFieldErrors().stream()
 				.map(fieldErr -> new FieldError(fieldErr.getField(), fieldErr.getDefaultMessage(),
 						fieldErr.getRejectedValue()))
-				.collect(Collectors.toList());
+				.toList();
 
 		return responseBuilder.buildErrorResponse(env.getProperty(ExceptionMessage.INVALID_REQUEST_BODY), fieldErrors);
 	}

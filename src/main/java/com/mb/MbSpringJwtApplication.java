@@ -15,5 +15,4 @@ public class MbSpringJwtApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MbSpringJwtApplication.class, args);
 	}
-
 }

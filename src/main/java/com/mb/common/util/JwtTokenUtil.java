@@ -68,18 +68,20 @@ public class JwtTokenUtil {
 	 * @return {@link JWTClaimsSet}
 	 */
 	public JWTClaimsSet verifyAndGetTokenClaims(String token) {
-		JWTClaimsSet jwtClaimsSet = null;
-
 		try {
 			SignedJWT signedJWT = SignedJWT.parse(token);
 			JWSVerifier verifier = new RSASSAVerifier(rsaKey.toPublicJWK());
-			signedJWT.verify(verifier);
-			jwtClaimsSet = signedJWT.getJWTClaimsSet();
+
+			if (!signedJWT.verify(verifier)) {
+				throw new CustomException(env.getProperty(ExceptionMessage.SIGNATURE_INVALID),
+						CustomErrorCode.SIGNATURE_INVALID, HttpStatus.BAD_REQUEST);
+			}
+
+			return signedJWT.getJWTClaimsSet();
 		} catch (JOSEException | ParseException e) {
 			throw new CustomException(env.getProperty(ExceptionMessage.TOKEN_INVALID), e, CustomErrorCode.TOKEN_INVALID,
 					HttpStatus.BAD_REQUEST);
 		}
-		return jwtClaimsSet;
 	}
 
 	/**
@@ -90,12 +92,10 @@ public class JwtTokenUtil {
 	 * @return {@link Boolean}
 	 */
 	public void isJWTExpired(Date expirationDate) {
-
 		if (expirationDate.before(new Date())) {
 			throw new CustomException(env.getProperty(ExceptionMessage.TOKEN_EXPIRED), CustomErrorCode.TOKEN_EXPIRED,
 					HttpStatus.BAD_REQUEST);
 		}
-
 	}
 
 	/**
@@ -106,16 +106,15 @@ public class JwtTokenUtil {
 	 * @return {@link String}
 	 */
 	private String signedJWT(JWTClaimsSet claimsSet) {
-
-		SignedJWT signedJWT = new SignedJWT(new JWSHeader.Builder(JWSAlgorithm.RS256).build(), claimsSet);
 		try {
+			SignedJWT signedJWT = new SignedJWT(new JWSHeader.Builder(JWSAlgorithm.RS256).build(), claimsSet);
 			signedJWT.sign(new RSASSASigner(rsaKey));
+
+			return signedJWT.serialize();
 		} catch (JOSEException e) {
 			throw new CustomException(env.getProperty(ExceptionMessage.INTERNAL_SERVER_ERROR), e,
 					CustomErrorCode.INTERNAL_SERVER_ERROR, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
-
-		return signedJWT.serialize();
 	}
 
 	/**

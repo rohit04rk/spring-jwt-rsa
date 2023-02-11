@@ -61,7 +61,7 @@ public class AuthController {
 
 		AuthToken authToken = authService.userLogin(loginDto);
 
-		return responseBuilder.buildSuccessResponse(env.getProperty(ResponseMessage.SUCCESS), authToken,
-				HttpStatus.CREATED);
+		return responseBuilder.buildSuccessResponse(env.getProperty(ResponseMessage.SUCCESS), authToken, HttpStatus.OK);
 	}
+
 }

@@ -1,7 +1,6 @@
 package com.mb.common.config;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
@@ -35,8 +34,8 @@ public class CustomUserDetailsService implements UserDetailsService {
 		}
 
 		List<SimpleGrantedAuthority> grantedAuthorities = user.getUserRoles().stream()
-				.map(userRole -> new SimpleGrantedAuthority(userRole.getRole().getUserType().toString().toLowerCase()))
-				.collect(Collectors.toList());
+				.map(userRole -> new SimpleGrantedAuthority("ROLE_" + userRole.getRole().getUserType().toString()))
+				.toList();
 
 		return new org.springframework.security.core.userdetails.User(user.getEmail(), user.getPassword(),
 				grantedAuthorities);

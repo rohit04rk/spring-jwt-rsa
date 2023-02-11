@@ -1,0 +1,414 @@
+src/main/java/com/mb/MbSpringJwtApplication.java:9:	UnnecessaryAnnotationValueElement:	UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only element
+src/main/java/com/mb/MbSpringJwtApplication.java:13:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/MbSpringJwtApplication.java:13:	UseUtilityClass:	UseUtilityClass: All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/main/java/com/mb/MbSpringJwtApplication.java:15:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mb/MbSpringJwtApplication.java:15:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'args' is not assigned and could be declared final
+src/main/java/com/mb/common/aop/LoggingAspect.java:18:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/mb/common/aop/LoggingAspect.java:18:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/common/aop/LoggingAspect.java:20:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/aop/LoggingAspect.java:20:	ImmutableField:	ImmutableField: Private field 'log' could be made final; it is only initialized in the declaration or constructor.
+src/main/java/com/mb/common/aop/LoggingAspect.java:20:	LoggerIsNotStaticFinal:	LoggerIsNotStaticFinal: The Logger variable declaration does not contain the static and final modifiers
+src/main/java/com/mb/common/aop/LoggingAspect.java:22:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/aop/LoggingAspect.java:26:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mb/common/aop/LoggingAspect.java:26:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'joinPoint' is not assigned and could be declared final
+src/main/java/com/mb/common/aop/LoggingAspect.java:27:	GuardLogStatement:	GuardLogStatement: Logger calls should be surrounded by log level guards.
+src/main/java/com/mb/common/aop/LoggingAspect.java:31:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mb/common/aop/LoggingAspect.java:31:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'joinPoint' is not assigned and could be declared final
+src/main/java/com/mb/common/aop/LoggingAspect.java:32:	GuardLogStatement:	GuardLogStatement: Logger calls should be surrounded by log level guards.
+src/main/java/com/mb/common/aop/LoggingAspect.java:36:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mb/common/aop/LoggingAspect.java:36:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'joinPoint' is not assigned and could be declared final
+src/main/java/com/mb/common/aop/LoggingAspect.java:36:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'result' is not assigned and could be declared final
+src/main/java/com/mb/common/aop/LoggingAspect.java:41:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mb/common/aop/LoggingAspect.java:41:	LongVariable:	LongVariable: Avoid excessively long variable names like proceedingJoinPoint
+src/main/java/com/mb/common/aop/LoggingAspect.java:41:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'proceedingJoinPoint' is not assigned and could be declared final
+src/main/java/com/mb/common/aop/LoggingAspect.java:42:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'methodSignature' could be declared final
+src/main/java/com/mb/common/aop/LoggingAspect.java:44:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/aop/LoggingAspect.java:44:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mb/common/aop/LoggingAspect.java:44:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'className' could be declared final
+src/main/java/com/mb/common/aop/LoggingAspect.java:45:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mb/common/aop/LoggingAspect.java:45:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'methodName' could be declared final
+src/main/java/com/mb/common/aop/LoggingAspect.java:50:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'result' could be declared final
+src/main/java/com/mb/common/aop/LoggingAspect.java:53:	GuardLogStatement:	GuardLogStatement: Logger calls should be surrounded by log level guards.
+src/main/java/com/mb/common/config/CustomUserDetailsService.java:20:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/mb/common/config/CustomUserDetailsService.java:20:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/common/config/CustomUserDetailsService.java:23:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/config/CustomUserDetailsService.java:26:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/config/CustomUserDetailsService.java:29:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'email' is not assigned and could be declared final
+src/main/java/com/mb/common/config/CustomUserDetailsService.java:30:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'user' could be declared final
+src/main/java/com/mb/common/config/CustomUserDetailsService.java:36:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/config/CustomUserDetailsService.java:36:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/config/CustomUserDetailsService.java:36:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/config/CustomUserDetailsService.java:36:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mb/common/config/CustomUserDetailsService.java:36:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'grantedAuthorities' could be declared final
+src/main/java/com/mb/common/config/CustomUserDetailsService.java:36:	LongVariable:	LongVariable: Avoid excessively long variable names like grantedAuthorities
+src/main/java/com/mb/common/config/CustomUserDetailsService.java:40:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mb/common/config/CustomUserDetailsService.java:40:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mb/common/config/JwtRequestFilter.java:30:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/mb/common/config/JwtRequestFilter.java:30:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/common/config/JwtRequestFilter.java:33:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/config/JwtRequestFilter.java:33:	LongVariable:	LongVariable: Avoid excessively long variable names like userDetailsService
+src/main/java/com/mb/common/config/JwtRequestFilter.java:36:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/config/JwtRequestFilter.java:39:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'filterChain' is not assigned and could be declared final
+src/main/java/com/mb/common/config/JwtRequestFilter.java:39:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/main/java/com/mb/common/config/JwtRequestFilter.java:39:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'response' is not assigned and could be declared final
+src/main/java/com/mb/common/config/JwtRequestFilter.java:42:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'header' could be declared final
+src/main/java/com/mb/common/config/JwtRequestFilter.java:44:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mb/common/config/JwtRequestFilter.java:44:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mb/common/config/JwtRequestFilter.java:46:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'authToken' could be declared final
+src/main/java/com/mb/common/config/JwtRequestFilter.java:47:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'claimsSet' (lines '47'-'50').
+src/main/java/com/mb/common/config/JwtRequestFilter.java:47:	UnusedAssignment:	UnusedAssignment: The initializer for variable 'claimsSet' is never used (overwritten on line 50)
+src/main/java/com/mb/common/config/JwtRequestFilter.java:51:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mb/common/config/JwtRequestFilter.java:61:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mb/common/config/JwtRequestFilter.java:61:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'userDetails' could be declared final
+src/main/java/com/mb/common/config/JwtRequestFilter.java:62:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/config/JwtRequestFilter.java:62:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/config/JwtRequestFilter.java:62:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'auhtoritites' could be declared final
+src/main/java/com/mb/common/config/JwtRequestFilter.java:63:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/config/JwtRequestFilter.java:63:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/config/JwtRequestFilter.java:63:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mb/common/config/JwtRequestFilter.java:66:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'authentication' could be declared final
+src/main/java/com/mb/common/config/JwtRequestFilter.java:69:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/config/JwtStoreConfig.java:23:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/mb/common/config/JwtStoreConfig.java:23:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/common/config/JwtStoreConfig.java:25:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/com/mb/common/config/JwtStoreConfig.java:26:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the jwkSource method if you want a default access modifier
+src/main/java/com/mb/common/config/JwtStoreConfig.java:26:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'env' is not assigned and could be declared final
+src/main/java/com/mb/common/config/JwtStoreConfig.java:28:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'keyFactory' could be declared final
+src/main/java/com/mb/common/config/JwtStoreConfig.java:30:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'privateKeySpec' could be declared final
+src/main/java/com/mb/common/config/JwtStoreConfig.java:32:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'publicKeySpec' could be declared final
+src/main/java/com/mb/common/config/JwtStoreConfig.java:35:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'publicKey' could be declared final
+src/main/java/com/mb/common/config/JwtStoreConfig.java:36:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'privateKey' could be declared final
+src/main/java/com/mb/common/config/JwtStoreConfig.java:41:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the keyBytesFromFile method if you want a default access modifier
+src/main/java/com/mb/common/config/JwtStoreConfig.java:41:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/com/mb/common/config/JwtStoreConfig.java:41:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'fileName' is not assigned and could be declared final
+src/main/java/com/mb/common/config/PersistenceConfig.java:12:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/mb/common/config/PersistenceConfig.java:12:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/common/config/PersistenceConfig.java:14:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/com/mb/common/config/PersistenceConfig.java:15:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the auditorProvider method if you want a default access modifier
+src/main/java/com/mb/common/config/SecurityConfig.java:22:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/mb/common/config/SecurityConfig.java:22:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/common/config/SecurityConfig.java:25:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/config/SecurityConfig.java:25:	LongVariable:	LongVariable: Avoid excessively long variable names like userDetailsService
+src/main/java/com/mb/common/config/SecurityConfig.java:27:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/com/mb/common/config/SecurityConfig.java:28:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the passwordEncoder method if you want a default access modifier
+src/main/java/com/mb/common/config/SecurityConfig.java:32:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/com/mb/common/config/SecurityConfig.java:33:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the authenticationManager method if you want a default access modifier
+src/main/java/com/mb/common/config/SecurityConfig.java:33:	LongVariable:	LongVariable: Avoid excessively long variable names like authenticationConfiguration
+src/main/java/com/mb/common/config/SecurityConfig.java:33:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'authenticationConfiguration' is not assigned and could be declared final
+src/main/java/com/mb/common/config/SecurityConfig.java:34:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/com/mb/common/config/SecurityConfig.java:38:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/com/mb/common/config/SecurityConfig.java:39:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the authenticationProvider method if you want a default access modifier
+src/main/java/com/mb/common/config/SecurityConfig.java:40:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'authProvider' could be declared final
+src/main/java/com/mb/common/config/SecurityConfig.java:48:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/com/mb/common/config/SecurityConfig.java:49:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the jwtRequestFilter method if you want a default access modifier
+src/main/java/com/mb/common/config/SecurityConfig.java:53:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/com/mb/common/config/SecurityConfig.java:54:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the securityFilterChain method if you want a default access modifier
+src/main/java/com/mb/common/config/SecurityConfig.java:54:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'http' is not assigned and could be declared final
+src/main/java/com/mb/common/config/SecurityConfig.java:54:	SignatureDeclareThrowsException:	SignatureDeclareThrowsException: A method/constructor should not explicitly throw java.lang.Exception
+src/main/java/com/mb/common/config/SecurityConfig.java:56:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/config/SecurityConfig.java:56:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/config/SecurityConfig.java:56:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/config/SecurityConfig.java:56:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/config/SecurityConfig.java:56:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/config/SecurityConfig.java:56:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/config/SecurityConfig.java:56:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/constant/ExceptionMessage.java:3:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	ClassWithOnlyPrivateConstructorsShouldBeFinal: A class which only has private constructors should be final
+src/main/java/com/mb/common/constant/ExceptionMessage.java:3:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/common/constant/ExceptionMessage.java:9:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/ExceptionMessage.java:9:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/ExceptionMessage.java:9:	LongVariable:	LongVariable: Avoid excessively long variable names like INTERNAL_SERVER_ERROR
+src/main/java/com/mb/common/constant/ExceptionMessage.java:10:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/ExceptionMessage.java:10:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/ExceptionMessage.java:10:	LongVariable:	LongVariable: Avoid excessively long variable names like INVALID_REQUEST_BODY
+src/main/java/com/mb/common/constant/ExceptionMessage.java:13:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/ExceptionMessage.java:13:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/ExceptionMessage.java:14:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/ExceptionMessage.java:14:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/ExceptionMessage.java:14:	LongVariable:	LongVariable: Avoid excessively long variable names like USER_ROLE_NOT_FOUND
+src/main/java/com/mb/common/constant/ExceptionMessage.java:15:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/ExceptionMessage.java:15:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/ExceptionMessage.java:15:	LongVariable:	LongVariable: Avoid excessively long variable names like USER_ALREADY_EXIST
+src/main/java/com/mb/common/constant/ExceptionMessage.java:16:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/ExceptionMessage.java:16:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/ExceptionMessage.java:19:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/ExceptionMessage.java:19:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/ExceptionMessage.java:20:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/ExceptionMessage.java:20:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/JwtConstant.java:3:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	ClassWithOnlyPrivateConstructorsShouldBeFinal: A class which only has private constructors should be final
+src/main/java/com/mb/common/constant/JwtConstant.java:3:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/common/constant/JwtConstant.java:8:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/JwtConstant.java:8:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/JwtConstant.java:9:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/JwtConstant.java:9:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/JwtConstant.java:10:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/JwtConstant.java:10:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/JwtConstant.java:12:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/JwtConstant.java:12:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/JwtConstant.java:12:	LongVariable:	LongVariable: Avoid excessively long variable names like ACCESS_TOKEN_EXPIRY_MS
+src/main/java/com/mb/common/constant/JwtConstant.java:13:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/JwtConstant.java:13:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/JwtConstant.java:13:	LongVariable:	LongVariable: Avoid excessively long variable names like REFRESH_TOKEN_EXPIRY_MS
+src/main/java/com/mb/common/constant/JwtConstant.java:14:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/JwtConstant.java:14:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/JwtConstant.java:15:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/JwtConstant.java:15:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/JwtConstant.java:17:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/JwtConstant.java:17:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/KeyConstant.java:3:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	ClassWithOnlyPrivateConstructorsShouldBeFinal: A class which only has private constructors should be final
+src/main/java/com/mb/common/constant/KeyConstant.java:3:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/common/constant/KeyConstant.java:9:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/KeyConstant.java:9:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/KeyConstant.java:10:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/KeyConstant.java:10:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/ResponseMessage.java:3:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	ClassWithOnlyPrivateConstructorsShouldBeFinal: A class which only has private constructors should be final
+src/main/java/com/mb/common/constant/ResponseMessage.java:3:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/common/constant/ResponseMessage.java:9:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/ResponseMessage.java:9:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/ResponseMessage.java:12:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/ResponseMessage.java:12:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/ResponseMessage.java:12:	LongVariable:	LongVariable: Avoid excessively long variable names like USER_ADDED_SUCCESS
+src/main/java/com/mb/common/constant/SwaggerConstant.java:3:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	ClassWithOnlyPrivateConstructorsShouldBeFinal: A class which only has private constructors should be final
+src/main/java/com/mb/common/constant/SwaggerConstant.java:3:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/common/constant/SwaggerConstant.java:8:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/SwaggerConstant.java:8:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/SwaggerConstant.java:9:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/SwaggerConstant.java:9:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/SwaggerConstant.java:10:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/SwaggerConstant.java:10:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/UrlMapping.java:3:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	ClassWithOnlyPrivateConstructorsShouldBeFinal: A class which only has private constructors should be final
+src/main/java/com/mb/common/constant/UrlMapping.java:3:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/common/constant/UrlMapping.java:8:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/UrlMapping.java:8:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/UrlMapping.java:11:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/UrlMapping.java:11:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/UrlMapping.java:12:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/UrlMapping.java:12:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/UrlMapping.java:13:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/UrlMapping.java:13:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/constant/UrlMapping.java:16:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/constant/UrlMapping.java:16:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/controller/HealthCheckController.java:20:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/mb/common/controller/HealthCheckController.java:20:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/common/controller/HealthCheckController.java:23:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/controller/HealthCheckController.java:26:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/controller/HealthCheckController.java:37:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'healthCheck' could be declared final
+src/main/java/com/mb/common/entity/AuditorAwareImpl.java:9:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/mb/common/entity/AuditorAwareImpl.java:9:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/common/entity/AuditorAwareImpl.java:13:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/entity/AuditorAwareImpl.java:13:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'authentication' could be declared final
+src/main/java/com/mb/common/entity/AuditorAwareImpl.java:16:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/mb/common/entity/BaseEntity.java:29:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/common/entity/BaseEntity.java:36:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/entity/BaseEntity.java:36:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/mb/common/entity/BaseEntity.java:41:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/entity/BaseEntity.java:46:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/entity/BaseEntity.java:50:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/entity/BaseEntity.java:54:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/entity/BaseEntity.java:58:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/enums/EntityStatus.java:3:	CommentRequired:	CommentRequired: Enum comments are required
+src/main/java/com/mb/common/enums/UserType.java:3:	CommentRequired:	CommentRequired: Enum comments are required
+src/main/java/com/mb/common/exception/CustomErrorCode.java:3:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	ClassWithOnlyPrivateConstructorsShouldBeFinal: A class which only has private constructors should be final
+src/main/java/com/mb/common/exception/CustomErrorCode.java:3:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/common/exception/CustomErrorCode.java:9:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/exception/CustomErrorCode.java:9:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/exception/CustomErrorCode.java:9:	LongVariable:	LongVariable: Avoid excessively long variable names like INTERNAL_SERVER_ERROR
+src/main/java/com/mb/common/exception/CustomErrorCode.java:10:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/exception/CustomErrorCode.java:10:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/exception/CustomErrorCode.java:11:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/exception/CustomErrorCode.java:11:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/exception/CustomErrorCode.java:12:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/exception/CustomErrorCode.java:12:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/exception/CustomErrorCode.java:15:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/exception/CustomErrorCode.java:15:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/exception/CustomErrorCode.java:16:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/exception/CustomErrorCode.java:16:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/exception/CustomErrorCode.java:19:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/exception/CustomErrorCode.java:19:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mb/common/exception/CustomErrorCode.java:19:	LongVariable:	LongVariable: Avoid excessively long variable names like USER_ALREADY_EXISTS
+src/main/java/com/mb/common/exception/CustomException.java:8:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/common/exception/CustomException.java:11:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/exception/CustomException.java:12:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/exception/CustomException.java:14:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mb/common/exception/CustomException.java:14:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+src/main/java/com/mb/common/exception/CustomException.java:14:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'errorCode' is not assigned and could be declared final
+src/main/java/com/mb/common/exception/CustomException.java:14:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'httpStatus' is not assigned and could be declared final
+src/main/java/com/mb/common/exception/CustomException.java:14:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'message' is not assigned and could be declared final
+src/main/java/com/mb/common/exception/CustomException.java:14:	ShortVariable:	ShortVariable: Avoid variables with short names like e
+src/main/java/com/mb/common/exception/CustomException.java:20:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mb/common/exception/CustomException.java:20:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'errorCode' is not assigned and could be declared final
+src/main/java/com/mb/common/exception/CustomException.java:20:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'httpStatus' is not assigned and could be declared final
+src/main/java/com/mb/common/exception/CustomException.java:20:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'message' is not assigned and could be declared final
+src/main/java/com/mb/common/exception/CustomExceptionHandler.java:22:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/mb/common/exception/CustomExceptionHandler.java:22:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/common/exception/CustomExceptionHandler.java:25:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/exception/CustomExceptionHandler.java:28:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/exception/CustomExceptionHandler.java:38:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'customException' is not assigned and could be declared final
+src/main/java/com/mb/common/exception/CustomExceptionHandler.java:52:	LongVariable:	LongVariable: Avoid excessively long variable names like nullPointerException
+src/main/java/com/mb/common/exception/CustomExceptionHandler.java:52:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'nullPointerException' is not assigned and could be declared final
+src/main/java/com/mb/common/exception/CustomExceptionHandler.java:64:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'ex' is not assigned and could be declared final
+src/main/java/com/mb/common/exception/CustomExceptionHandler.java:64:	ShortVariable:	ShortVariable: Avoid variables with short names like ex
+src/main/java/com/mb/common/exception/CustomExceptionHandler.java:65:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'headers' is not assigned and could be declared final
+src/main/java/com/mb/common/exception/CustomExceptionHandler.java:65:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/main/java/com/mb/common/exception/CustomExceptionHandler.java:65:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'status' is not assigned and could be declared final
+src/main/java/com/mb/common/exception/CustomExceptionHandler.java:67:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/exception/CustomExceptionHandler.java:67:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/exception/CustomExceptionHandler.java:67:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/exception/CustomExceptionHandler.java:67:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/exception/CustomExceptionHandler.java:67:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'fieldErrors' could be declared final
+src/main/java/com/mb/common/exception/FieldError.java:10:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/common/exception/FieldError.java:12:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/exception/FieldError.java:14:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/exception/FieldError.java:16:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/model/AuthToken.java:8:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/common/model/AuthToken.java:10:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/model/AuthToken.java:12:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/model/AuthToken.java:14:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/model/ErrorResponse.java:18:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/common/model/ErrorResponse.java:20:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/model/ErrorResponse.java:22:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/model/ErrorResponse.java:24:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/model/ErrorResponse.java:26:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/model/ErrorResponse.java:28:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/model/HealthCheck.java:6:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/common/model/HealthCheck.java:8:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/model/HealthCheck.java:10:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/model/HealthCheck.java:12:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/model/HealthCheck.java:14:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/model/SuccessResponse.java:16:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/common/model/SuccessResponse.java:18:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/model/SuccessResponse.java:20:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/model/SuccessResponse.java:22:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/model/SuccessResponse.java:24:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/util/JwtTokenUtil.java:31:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/mb/common/util/JwtTokenUtil.java:31:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/common/util/JwtTokenUtil.java:34:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/util/JwtTokenUtil.java:37:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/util/JwtTokenUtil.java:46:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'authentication' is not assigned and could be declared final
+src/main/java/com/mb/common/util/JwtTokenUtil.java:48:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'user' could be declared final
+src/main/java/com/mb/common/util/JwtTokenUtil.java:49:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/util/JwtTokenUtil.java:49:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/util/JwtTokenUtil.java:49:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/util/JwtTokenUtil.java:49:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mb/common/util/JwtTokenUtil.java:49:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'authorities' could be declared final
+src/main/java/com/mb/common/util/JwtTokenUtil.java:52:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mb/common/util/JwtTokenUtil.java:52:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'accessTokenClaims' could be declared final
+src/main/java/com/mb/common/util/JwtTokenUtil.java:54:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'accessToken' could be declared final
+src/main/java/com/mb/common/util/JwtTokenUtil.java:56:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mb/common/util/JwtTokenUtil.java:56:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'refreshTokenClaims' could be declared final
+src/main/java/com/mb/common/util/JwtTokenUtil.java:56:	LongVariable:	LongVariable: Avoid excessively long variable names like refreshTokenClaims
+src/main/java/com/mb/common/util/JwtTokenUtil.java:58:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'refreshToken' could be declared final
+src/main/java/com/mb/common/util/JwtTokenUtil.java:70:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'token' is not assigned and could be declared final
+src/main/java/com/mb/common/util/JwtTokenUtil.java:72:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'signedJWT' could be declared final
+src/main/java/com/mb/common/util/JwtTokenUtil.java:73:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'verifier' could be declared final
+src/main/java/com/mb/common/util/JwtTokenUtil.java:74:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mb/common/util/JwtTokenUtil.java:75:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mb/common/util/JwtTokenUtil.java:75:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'jwtClaimsSet' could be declared final
+src/main/java/com/mb/common/util/JwtTokenUtil.java:77:	UnnecessaryLocalBeforeReturn:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'jwtClaimsSet'
+src/main/java/com/mb/common/util/JwtTokenUtil.java:91:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'expirationDate' is not assigned and could be declared final
+src/main/java/com/mb/common/util/JwtTokenUtil.java:105:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'claimsSet' is not assigned and could be declared final
+src/main/java/com/mb/common/util/JwtTokenUtil.java:107:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'signedJWT' could be declared final
+src/main/java/com/mb/common/util/JwtTokenUtil.java:117:	CommentSize:	CommentSize: Comment is too large: Too many lines
+src/main/java/com/mb/common/util/JwtTokenUtil.java:126:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'authorities' is not assigned and could be declared final
+src/main/java/com/mb/common/util/JwtTokenUtil.java:126:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'milliseconds' is not assigned and could be declared final
+src/main/java/com/mb/common/util/JwtTokenUtil.java:126:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'subject' is not assigned and could be declared final
+src/main/java/com/mb/common/util/JwtTokenUtil.java:139:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'milliseconds' is not assigned and could be declared final
+src/main/java/com/mb/common/util/Mapper.java:18:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/mb/common/util/Mapper.java:18:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/common/util/Mapper.java:21:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/common/util/Mapper.java:23:	CommentSize:	CommentSize: Comment is too large: Too many lines
+src/main/java/com/mb/common/util/Mapper.java:32:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'srcObj' is not assigned and could be declared final
+src/main/java/com/mb/common/util/Mapper.java:32:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'targetClass' is not assigned and could be declared final
+src/main/java/com/mb/common/util/Mapper.java:33:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'modelMapper' could be declared final
+src/main/java/com/mb/common/util/Mapper.java:34:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/util/Mapper.java:35:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/util/Mapper.java:39:	AvoidCatchingGenericException:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/main/java/com/mb/common/util/Mapper.java:45:	CommentSize:	CommentSize: Comment is too large: Too many lines
+src/main/java/com/mb/common/util/Mapper.java:55:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'srcList' is not assigned and could be declared final
+src/main/java/com/mb/common/util/Mapper.java:55:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'targetClass' is not assigned and could be declared final
+src/main/java/com/mb/common/util/Mapper.java:56:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/main/java/com/mb/common/util/Mapper.java:57:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/common/util/ResponseBuilder.java:16:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/mb/common/util/ResponseBuilder.java:16:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/common/util/ResponseBuilder.java:18:	CommentSize:	CommentSize: Comment is too large: Too many lines
+src/main/java/com/mb/common/util/ResponseBuilder.java:28:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'data' is not assigned and could be declared final
+src/main/java/com/mb/common/util/ResponseBuilder.java:28:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'httpStatus' is not assigned and could be declared final
+src/main/java/com/mb/common/util/ResponseBuilder.java:28:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'message' is not assigned and could be declared final
+src/main/java/com/mb/common/util/ResponseBuilder.java:30:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/main/java/com/mb/common/util/ResponseBuilder.java:39:	CommentSize:	CommentSize: Comment is too large: Too many lines
+src/main/java/com/mb/common/util/ResponseBuilder.java:48:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'errorCode' is not assigned and could be declared final
+src/main/java/com/mb/common/util/ResponseBuilder.java:48:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'httpStatus' is not assigned and could be declared final
+src/main/java/com/mb/common/util/ResponseBuilder.java:48:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'message' is not assigned and could be declared final
+src/main/java/com/mb/common/util/ResponseBuilder.java:50:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/main/java/com/mb/common/util/ResponseBuilder.java:67:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'fieldErrors' is not assigned and could be declared final
+src/main/java/com/mb/common/util/ResponseBuilder.java:67:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'message' is not assigned and could be declared final
+src/main/java/com/mb/common/util/ResponseBuilder.java:69:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/main/java/com/mb/common/util/ResponseBuilder.java:71:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mb/user/controller/AuthController.java:25:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/mb/user/controller/AuthController.java:25:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/user/controller/AuthController.java:28:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/controller/AuthController.java:31:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/controller/AuthController.java:34:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/controller/AuthController.java:44:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'signupDto' is not assigned and could be declared final
+src/main/java/com/mb/user/controller/AuthController.java:60:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'loginDto' is not assigned and could be declared final
+src/main/java/com/mb/user/controller/AuthController.java:62:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'authToken' could be declared final
+src/main/java/com/mb/user/dao/UserDaoImpl.java:18:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/mb/user/dao/UserDaoImpl.java:18:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/user/dao/UserDaoImpl.java:21:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/dao/UserDaoImpl.java:24:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/dao/UserDaoImpl.java:27:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/dao/UserDaoImpl.java:37:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'email' is not assigned and could be declared final
+src/main/java/com/mb/user/dao/UserDaoImpl.java:40:	AvoidCatchingGenericException:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/main/java/com/mb/user/dao/UserDaoImpl.java:54:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'user' is not assigned and could be declared final
+src/main/java/com/mb/user/dao/UserDaoImpl.java:57:	AvoidCatchingGenericException:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/main/java/com/mb/user/dao/UserDaoImpl.java:71:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'userType' is not assigned and could be declared final
+src/main/java/com/mb/user/dao/UserDaoImpl.java:73:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mb/user/dao/UserDaoImpl.java:76:	AvoidCatchingGenericException:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/main/java/com/mb/user/dto/LoginDto.java:8:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/mb/user/dto/LoginDto.java:8:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/user/dto/LoginDto.java:12:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/dto/LoginDto.java:15:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/dto/SignupDto.java:8:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/mb/user/dto/SignupDto.java:8:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/user/dto/SignupDto.java:11:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/dto/SignupDto.java:14:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/dto/SignupDto.java:18:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/dto/SignupDto.java:21:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/entity/Role.java:23:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/user/entity/Role.java:23:	ShortClassName:	ShortClassName: Avoid short class names like Role
+src/main/java/com/mb/user/entity/Role.java:28:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/entity/Role.java:32:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/entity/User.java:26:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/user/entity/User.java:26:	ShortClassName:	ShortClassName: Avoid short class names like User
+src/main/java/com/mb/user/entity/User.java:31:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/entity/User.java:34:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/entity/User.java:37:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/entity/User.java:40:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/entity/User.java:43:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/entity/User.java:46:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/entity/User.java:50:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/entity/UserRole.java:23:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/user/entity/UserRole.java:29:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/entity/UserRole.java:33:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/repo/RoleRepo.java:10:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/user/repo/RoleRepo.java:12:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mb/user/repo/UserRepo.java:7:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/user/repo/UserRepo.java:9:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mb/user/service/AuthService.java:9:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/user/service/AuthServiceImpl.java:34:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/mb/user/service/AuthServiceImpl.java:34:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/mb/user/service/AuthServiceImpl.java:37:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/service/AuthServiceImpl.java:40:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/service/AuthServiceImpl.java:43:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/service/AuthServiceImpl.java:46:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/service/AuthServiceImpl.java:46:	LongVariable:	LongVariable: Avoid excessively long variable names like authenticationManager
+src/main/java/com/mb/user/service/AuthServiceImpl.java:49:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/service/AuthServiceImpl.java:52:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/mb/user/service/AuthServiceImpl.java:62:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'signupDto' is not assigned and could be declared final
+src/main/java/com/mb/user/service/AuthServiceImpl.java:67:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'user' could be declared final
+src/main/java/com/mb/user/service/AuthServiceImpl.java:68:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mb/user/service/AuthServiceImpl.java:70:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'role' could be declared final
+src/main/java/com/mb/user/service/AuthServiceImpl.java:71:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'userRoles' could be declared final
+src/main/java/com/mb/user/service/AuthServiceImpl.java:73:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mb/user/service/AuthServiceImpl.java:86:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'loginDto' is not assigned and could be declared final
+src/main/java/com/mb/user/service/AuthServiceImpl.java:88:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'authentication' could be declared final
+src/main/java/com/mb/user/service/AuthServiceImpl.java:93:	PreserveStackTrace:	PreserveStackTrace: New exception is thrown in catch block, original stack trace may be lost
