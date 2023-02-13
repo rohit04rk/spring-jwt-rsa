@@ -18,7 +18,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 @Configuration
 @Order(Ordered.HIGHEST_PRECEDENCE)
-public class CorsFilter implements Filter {
+public class CustomCorsFilter implements Filter {
 
 	private Logger logger = LogManager.getLogger();
 
