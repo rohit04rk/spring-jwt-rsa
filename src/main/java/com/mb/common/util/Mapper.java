@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.modelmapper.ModelMapper;
-import org.modelmapper.convention.MatchingStrategies;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
@@ -16,9 +15,12 @@ import com.mb.common.exception.CustomException;
 
 @Component
 public class Mapper {
-	
+
 	@Autowired
 	private Environment env;
+
+	@Autowired
+	private ModelMapper modelMapper;
 
 	/**
 	 * Map source object to target class
@@ -30,10 +32,6 @@ public class Mapper {
 	 * @return T class object
 	 */
 	public <T> T convert(Object srcObj, Class<T> targetClass) {
-		ModelMapper modelMapper = new ModelMapper();
-		modelMapper.getConfiguration().setAmbiguityIgnored(true);
-		modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
-
 		try {
 			return modelMapper.map(srcObj, targetClass);
 		} catch (Exception e) {

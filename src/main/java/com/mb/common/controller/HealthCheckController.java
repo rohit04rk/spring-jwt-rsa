@@ -32,7 +32,7 @@ public class HealthCheckController {
 	 * @return {@link ResponseEntity}
 	 */
 	@GetMapping
-	public ResponseEntity<SuccessResponse<HealthCheck>> userSignup() {
+	public ResponseEntity<SuccessResponse<HealthCheck>> healthCheck() {
 
 		HealthCheck healthCheck = new HealthCheck();
 		healthCheck.setAppName(env.getProperty(KeyConstant.APP_NAME));

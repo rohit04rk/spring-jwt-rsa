@@ -35,6 +35,16 @@ public class JwtRequestFilter extends OncePerRequestFilter {
 	@Autowired
 	private JwtTokenUtil jwtTokenUtil;
 
+	/**
+	 * This method gets call for every api call. Checks jwt token contains in
+	 * header. If header contains the jwt token then token signature and expiration
+	 * gets checked. If it is not valid then throws the exception
+	 * 
+	 * @author Mindbowser | rohit.kavthekar@mindbowser.com
+	 * @param request
+	 * @param response
+	 * @param filterChain
+	 */
 	@Override
 	protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
 			throws ServletException, IOException {

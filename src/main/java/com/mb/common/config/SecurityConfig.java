@@ -24,17 +24,38 @@ public class SecurityConfig {
 	@Resource(name = "CustomUserDetailsService")
 	private UserDetailsService userDetailsService;
 
+	/**
+	 * BCryptPassword encoder bean for encrypting the password
+	 * 
+	 * @author Mindbowser | rohit.kavthekar@mindbowser.com
+	 * @return {@link PasswordEncoder}
+	 */
 	@Bean
 	PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
 	}
 
+	/**
+	 * returns authentication manager bean for authenticating the user
+	 * 
+	 * @author Mindbowser | rohit.kavthekar@mindbowser.com
+	 * @param authenticationConfiguration
+	 * @return {@link AuthenticationManager}a
+	 * @throws Exception
+	 */
 	@Bean
 	AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration)
 			throws Exception {
 		return authenticationConfiguration.getAuthenticationManager();
 	}
 
+	/**
+	 * returns authentication provider bean with userdetails service and password
+	 * encoder
+	 * 
+	 * @author Mindbowser | rohit.kavthekar@mindbowser.com
+	 * @return {@link DaoAuthenticationProvider}
+	 */
 	@Bean
 	DaoAuthenticationProvider authenticationProvider() {
 		DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
@@ -45,17 +66,30 @@ public class SecurityConfig {
 		return authProvider;
 	}
 
+	/**
+	 * Custom bean for filtering jwt request
+	 * 
+	 * @author Mindbowser | rohit.kavthekar@mindbowser.com
+	 * @return {@link JwtRequestFilter}
+	 */
 	@Bean
 	JwtRequestFilter jwtRequestFilter() {
 		return new JwtRequestFilter();
 	}
 
+	/**
+	 * Security filter chain
+	 * 
+	 * @author Mindbowser | rohit.kavthekar@mindbowser.com
+	 * @param http
+	 * @return {@link SecurityFilterChain}
+	 * @throws Exception
+	 */
 	@Bean
 	SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 
 		return http.cors().and().csrf(AbstractHttpConfigurer::disable)
-				.authorizeHttpRequests(
-						auth -> auth.requestMatchers("/**").permitAll().anyRequest().authenticated())
+				.authorizeHttpRequests(auth -> auth.requestMatchers("/**").permitAll().anyRequest().authenticated())
 				.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
 				.addFilterBefore(jwtRequestFilter(), UsernamePasswordAuthenticationFilter.class)
 				.authenticationProvider(authenticationProvider()).build();

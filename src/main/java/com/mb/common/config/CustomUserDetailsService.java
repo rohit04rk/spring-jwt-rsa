@@ -25,6 +25,13 @@ public class CustomUserDetailsService implements UserDetailsService {
 	@Autowired
 	private Environment env;
 
+	/**
+	 * Custom implementation of loadUserBy method of spring security details service
+	 * which returns security user object, If user not found then throws exception
+	 * 
+	 * @author Mindbowser | rohit.kavthekar@mindbowser.com
+	 * @param email
+	 */
 	@Override
 	public UserDetails loadUserByUsername(String email) {
 		User user = userDao.findByEmail(email);

@@ -8,6 +8,13 @@ import org.springframework.security.core.context.SecurityContextHolder;
 
 public class AuditorAwareImpl implements AuditorAware<String> {
 
+	/**
+	 * Checks for authentication and returns name from authenticated object else
+	 * returns empty string
+	 * 
+	 * @author Mindbowser | rohit.kavthekar@mindbowser.com
+	 * @return {@link Optional}
+	 */
 	@Override
 	public Optional<String> getCurrentAuditor() {
 		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();

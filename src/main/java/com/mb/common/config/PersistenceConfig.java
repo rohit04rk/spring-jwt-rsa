@@ -11,6 +11,12 @@ import com.mb.common.entity.AuditorAwareImpl;
 @EnableJpaAuditing(auditorAwareRef = "auditorProvider")
 public class PersistenceConfig {
 
+	/**
+	 * Auditor aware bean for jpa auditing
+	 * 
+	 * @author Mindbowser | rohit.kavthekar@mindbowser.com
+	 * @return {@link AuditorAware}
+	 */
 	@Bean
 	AuditorAware<String> auditorProvider() {
 

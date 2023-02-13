@@ -22,6 +22,16 @@ import com.nimbusds.jose.jwk.RSAKey;
 @Configuration
 public class JwtStoreConfig {
 
+	/**
+	 * Returns RSAKey bean with private and public key
+	 * 
+	 * @author Mindbowser | rohit.kavthekar@mindbowser.com
+	 * @param env
+	 * @return {@link RSAKey}
+	 * @throws InvalidKeySpecException
+	 * @throws NoSuchAlgorithmException
+	 * @throws IOException
+	 */
 	@Bean
 	RSAKey jwkSource(Environment env) throws InvalidKeySpecException, NoSuchAlgorithmException, IOException {
 
@@ -38,6 +48,14 @@ public class JwtStoreConfig {
 		return new RSAKey.Builder(publicKey).privateKey(privateKey).build();
 	}
 
+	/**
+	 * Returns byte array from given file
+	 * 
+	 * @author Mindbowser | rohit.kavthekar@mindbowser.com
+	 * @param fileName
+	 * @return {@link Byte}
+	 * @throws IOException
+	 */
 	byte[] keyBytesFromFile(String fileName) throws IOException {
 
 		return Files.readAllBytes(new ClassPathResource(fileName).getFile().toPath());

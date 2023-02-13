@@ -4,10 +4,6 @@ import com.mb.common.enums.UserType;
 import com.mb.user.entity.Role;
 import com.mb.user.entity.User;
 
-/**
- * @author Mindbowser | rohit.kavthekar@mindbowser.com
- *
- */
 public interface UserDao {
 
 	/**
